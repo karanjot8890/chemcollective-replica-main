@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 17% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 17% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 17% 18%;
+
+    --primary: 210 17% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 77%;
+    --secondary-foreground: 210 17% 18%;
+
+    --muted: 210 16% 93%;
+    --muted-foreground: 210 10% 45%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 16% 82%;
+    --input: 210 16% 82%;
+    --ring: 210 17% 25%;
+
+    --radius: 0.25rem;
+    
+    --lab-header: 210 17% 25%;
+    --lab-header-foreground: 0 0% 100%;
+    --lab-workbench: 0 0% 77%;
+    --lab-stockroom: 0 0% 96%;
+    --lab-stockroom-border: 210 16% 82%;
+    --lab-item-hover: 0 0% 88%;
+    --lab-tabletop: 0 0% 35%;
+    --lab-tabletop-edge: 0 0% 20%;
+  }
+
+  .dark {
+    --background: 210 17% 18%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 17% 21%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 17% 21%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 17% 18%;
+
+    --secondary: 210 12% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 12% 30%;
+    --muted-foreground: 210 10% 70%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 12% 30%;
+    --input: 210 12% 30%;
+    --ring: 0 0% 100%;
+    
+    --lab-header: 210 17% 25%;
+    --lab-header-foreground: 0 0% 100%;
+    --lab-workbench: 210 12% 30%;
+    --lab-stockroom: 210 17% 21%;
+    --lab-stockroom-border: 210 12% 30%;
+    --lab-item-hover: 210 12% 35%;
+    --lab-tabletop: 0 0% 25%;
+    --lab-tabletop-edge: 0 0% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
